@@ -29,7 +29,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
     try {
         const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
-        if (user.email === 'your-email@example.com') {
+        if (user.email === 'admin@admin.123') {
             window.location.href = '我的專屬頁面.html';
         } else {
             window.location.href = 'done.html';
