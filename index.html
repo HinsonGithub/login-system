@@ -11,6 +11,25 @@
 </head>
 
 <body>
+    <p id="login-message"></p>
+
+<script>
+
+  // Get the URL parameters
+
+  const params = new URLSearchParams(window.location.search);
+
+  // Check if the loginapi parameter is present with a value of "store"
+
+  if (params.has("loginapi") && params.get("loginapi") === "store") {
+
+    // Display the login message
+
+    document.getElementById("login-message").textContent = "You are going to login to 'store'";
+
+  }
+
+</script>
     <h1>登錄頁面</h1>
     <form id="login-form">
         <label for="email">電子郵件:</label>
